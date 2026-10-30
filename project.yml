@@ -1,0 +1,22 @@
+name: MusicOnly
+options:
+  bundleIdPrefix: com.musiconly
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  MusicOnly:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: Music Only
+        UILaunchScreen: {}
+        UIBackgroundModes: [audio]
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.musiconly.app
+        SWIFT_VERSION: "5.0"
+        CODE_SIGNING_ALLOWED: "NO"
